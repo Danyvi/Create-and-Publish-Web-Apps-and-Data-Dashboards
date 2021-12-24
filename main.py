@@ -14,4 +14,8 @@ st.subheader('Introducing Streamlit in Automate Everything with Python')
 st.write('''This is our first Web App''')
 
 st.write(df)
-st.line_chart(df) 
+st.line_chart(df)
+st.area_chart(df)
+
+mySlider = st.slider('Celsius')
+st.write(mySlider, 'in Farheneit is ', mySlider * 9/5 + 32)
